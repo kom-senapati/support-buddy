@@ -1,33 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root  {
+  --background: 140 0% 100%;
+  --foreground: 140 0% 10%;
+  --card: 140 0% 100%;
+  --card-foreground: 140 0% 15%;
+  --popover: 140 0% 100%;
+  --popover-foreground: 140 95% 10%;
+  --primary: 140 61% 46%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 140 10% 90%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 102 10% 95%;
+  --muted-foreground: 140 0% 40%;
+  --accent: 102 10% 90%;
+  --accent-foreground: 140 0% 15%;
+  --destructive: 0 50% 50%;
+  --destructive-foreground: 140 0% 100%;
+  --border: 140 20% 82%;
+  --input: 140 20% 50%;
+  --ring: 140 61% 46%;
+  --radius: 0.5rem;
+}
+.dark  {
+  --background: 140 10% 10%;
+  --foreground: 140 0% 100%;
+  --card: 140 0% 10%;
+  --card-foreground: 140 0% 100%;
+  --popover: 140 10% 5%;
+  --popover-foreground: 140 0% 100%;
+  --primary: 140 61% 46%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 140 10% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 102 10% 25%;
+  --muted-foreground: 140 0% 65%;
+  --accent: 102 10% 25%;
+  --accent-foreground: 140 0% 95%;
+  --destructive: 0 50% 50%;
+  --destructive-foreground: 140 0% 100%;
+  --border: 140 20% 50%;
+  --input: 140 20% 50%;
+  --ring: 140 61% 46%;
+  --radius: 0.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
