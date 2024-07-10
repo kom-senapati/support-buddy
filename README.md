@@ -8,8 +8,10 @@ Support Buddy is an AI chatbot that seamlessly integrates with your business to 
 - 🔗 **Seamless Integrations**: Easily integrates with your existing systems.
 - ⚡ **Effortless Setup**: User-friendly interface and comprehensive documentation.
 
-<!-- ## Demo 🎥
- -->
+## Demo 🎥
+
+[Support Buddy Demo.webm](https://github.com/kom-senapati/support-buddy/assets/92045934/7f50e131-6820-413a-b760-59c5e91e2fc3)
+
 
 
 ## Technologies 🛠️
