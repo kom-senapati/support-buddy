@@ -17,7 +17,7 @@ const Chatbot = () => {
   return (
     <>
       <button onClick={toggleChat} className="fixed bottom-8 right-8">
-        <img src="chat.svg" alt="chat" className="h-10 rounded-full" />
+        <img src="chat-bot/chat.svg" alt="chat" className="h-10 rounded-full" />
       </button>
 
       {isChatOpen && (
@@ -43,7 +43,7 @@ const Chatbot = () => {
               type="submit"
               className="bg-white border border-gray-300 p-2 rounded-r-lg"
             >
-              <img src="send.svg" alt="send" className="h-6" />
+              <img src="chat-bot/send.svg" alt="send" className="h-6" />
             </button>
           </form>
         </div>
