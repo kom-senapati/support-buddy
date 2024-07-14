@@ -1,5 +1,6 @@
 import { type CoreMessage, streamText } from "ai";
 import { createOpenAI } from "@ai-sdk/openai";
+import PromptData from "@/prompt.json";
 
 export const maxDuration = 30;
 
@@ -13,9 +14,15 @@ export async function POST(req: Request) {
 
   const model = openai("gpt-3.5-turbo");
 
+  const systemMessage = `
+  Application Name : ${PromptData.name}
+  Application Description : ${PromptData.description}
+  ${PromptData.prompt}
+  `;
+
   const result = await streamText({
     model: model,
-    system: "You are a helpful assistant.",
+    system: systemMessage,
     messages,
   });
 
